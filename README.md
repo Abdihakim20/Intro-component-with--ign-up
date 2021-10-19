@@ -32,8 +32,8 @@ Your users should be able to:
 ![Error design](./screenshot2.png);
 ### Links
 
-- Solution URL: [Solution link](https://github.com/Abdihakim20/order-summery-card)
-- Live Site URL: [Live site link](https://abdihakim20.github.io/order-summery-card/)
+- Solution URL: [Solution link](https://abdihakim20.github.io/Intro-component-with--ign-up/)
+- Live Site URL: [Live site link](https://github.com/Abdihakim20/Intro-component-with--ign-up)
 
 ### Built with
 
