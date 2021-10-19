@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-content">
+        <h1>Learn to code by watching others</h1>
+        <p>
+        See how experienced developers solve
+         problems in real-time. Watching scripted tutorials is great, but
+        understanding how developers think is invaluable.
+        </p> 
+      </div>
+      <div class="right-content">
+        <button class="btn btn-blue"><span>Try it free 7 days</span> then $20/mo. thereafter</button> 
+      <form action="#" class="form" id="form">
+        <div class="form-control">
+          <input type="text" id="first-name"  placeholder=" Jonathan | ">
+          <i class="fas fa-exclamation-circle"></i>
+          <small>error</small>
+        </div>
+        <div class="form-control">
+          <input type="text" id="last-name"  placeholder="Last Name">
+          <i class="fas fa-exclamation-circle"></i>
+          <small>error</small>
+        </div>
+        <div class="form-control">
+          <input type="email" name="email" id="email" placeholder=" Email Address">
+          <i class="fas fa-exclamation-circle"></i>
+          <small>error</small>
+        </div>
+        <div class="form-control">
+          <input type="password" name="" id="password" placeholder="Password">
+          <i class="fas fa-exclamation-circle"></i>
+          <small>error</small>
+        </div>
+        <input type="submit" value="Claim your free trial" class="btn btn-green">
+        <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      </form>
+      </div>
+    </div>  
+    <script src="app.js"></script>
+  </body>
+</html>

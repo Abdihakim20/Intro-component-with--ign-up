@@ -1,0 +1,167 @@
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%);
+    --grayishBlue: hsl(246, 25%, 77%); 
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/bg-intro-desktop.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--red);
+    min-height: 100vh;
+    margin: 0;
+}
+/* Coontainer */
+.container{
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: var(--red);
+    font-size: 16px;
+}
+h1{
+    font-size: 3rem;
+}
+
+.form{
+    background-color: #ffff;
+    color: var(--grayishBlue);
+    padding:30px;
+    width: 480px;
+    margin: 30px 0;
+    border-radius: 5px;
+  /* box shadow */
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.3);
+
+}
+.form p{
+    font-size: 10px;
+}
+.form-control{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+/* imput */
+.form-control input{
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--grayishBlue);
+    font-size: 20px;
+}
+.form-control input:focus{
+    outline: 1px solid var(--darkBlue);
+}
+
+.error input{
+  border:2px solid var(--red);
+}
+
+.success input{
+  border:2px solid var(--green);
+}
+
+/* i  styling*/
+i {
+    position: absolute;
+    top: 20px;
+    right: 14px;
+    font-size: 20px;
+    visibility: hidden;
+}
+
+small{
+    visibility: hidden;
+    display: block;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+/* Error */
+.error i,
+.error small {
+    visibility: visible;
+    color: red;  
+}
+
+/* Button style */
+.btn{
+    display: block; 
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: blue;
+    margin: 20px 0;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+}
+
+.btn-blue{
+    background-color: var(--blue);
+    padding: 15px;
+}
+.btn-blue span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.btn-green{
+    background-color: var(--green);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 769px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left-content{
+        text-align: center;
+        width: 450px;
+    }
+}
+@media (max-width:500px) {
+  .form,
+  .left-content{
+      max-width: 340px;
+  }
+  h1{
+      font-size: 2rem;
+  }
+
+  .btn-blue span{
+    font-size: 18px;
+    font-weight: 700;
+}
+}
