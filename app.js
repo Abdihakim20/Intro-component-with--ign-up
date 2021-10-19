@@ -10,11 +10,19 @@ function showError(input,message) {
     formControl.className = 'form-control error';
     const small = formControl.querySelector('small');
     small.innerText = message;
+    setTimeout(() => {
+      formControl.classList.remove('error');
+     small.innerText = ''
+    }, 2000);
 }
 // show success
 function showSuccess(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
+    setTimeout(() => {
+      formControl.classList.remove('success');
+      input.value = '';
+    }, 2000);
 }
 // check required
 function checkRequired(inputArr) {
@@ -36,7 +44,10 @@ function validateEmail(input) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (re.test(input.value.trim())) {
       showSuccess(input);
-    }else{
+    } else if(input.value === ''){
+      showError(input, 'Email is required');
+    }
+    else {
       showError(input, 'Looks like this is not an email');
     }
 }
